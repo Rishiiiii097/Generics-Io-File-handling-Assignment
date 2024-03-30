@@ -1,0 +1,26 @@
+1. What is Input and output Stream in Java?
+Ans:-InputStream: InputStream is an abstract class of Byte Stream that describe stream input and it is used for reading and it could be a file, image, audio, video, webpage, etc. it doesn’t matter. Thus, InputStream read data from source one item at a time.
+OutputStream: OutputStream is an abstract class of Byte Stream that describes stream output and it is used for writing data to a file, image, audio, etc. Thus, OutputStream writes data to the destination one at a time
+2.What are the methods of outputStream?
+Ans:-The OutputStream class provides different methods that are implemented by its subclasses. Here are some of the methods: write (byte array) - writes the bytes from the specified array to the output stream flush () - forces to write all data present in output stream to the destination
+3.What is serialization in Java?
+Ans:-Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object.
+4.What is the Serializable interface in Java?
+Ans:-The Serializable interface is present in java.io package. It is a marker interface. A Marker Interface does not have any methods and fields. Thus classes implementing it do not have to implement any methods. Classes implement it if they want their instances to be Serialized or Deserialized. Serialization is a mechanism of converting the state of an object into a byte stream. Serialization is done using ObjectOutputStream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object. Deserialization is done using ObjectInputStream. Thus it can be used to make an eligible for saving its state into a file
+5.What is deserialization in Java?
+Ans:-Deserialization is the process of reconstructing the object from the serialized state. It is the reverse operation of serialization. Let's see an example where we are reading the data from a deserialized object,Deserialization is the process of reconstructing the object from the serialized state. It is the reverse operation of serialization. Let's see an example where we are reading the data from a deserialized object.
+6.How is serialization achieved in Java?
+Ans:-The byte stream created is platform independent. So, the object serialized on one platform can be deserialized on a different platform. To make a Java object serializable we implement the java.io.Serializable interface. The ObjectOutputStream class contains writeObject() method for serializing an Object. 
+7.How is deserialization achieved in Java?
+Ans:- be very precise, this stream of bytes (or say serialized data) has all the information about the instance which was serialized by the serialization process. This information includes the class’s metadata, type information of instance fields and values of instance fields as well. This same information is needed when the object is reconstructed into a new object instance.
+8.How can you avoid certain member variables if class from getting Serialized?
+Ans:-If superClass has implemented Serializable that means subclass is also Serializable (as subclass always inherits all features from its parent class), for avoiding Serialization in sub-class we can define writeObject () method and throw NotSerializableException() 
+9.What classes are available in the Java Io File Classes API?
+Ans:-ava File class is Java’s representation of a file or directory pathname. Because file and directory names have different formats on different platforms, a simple string is not adequate to name them. Java File class contains several methods for working with the pathname, deleting and renaming files, creating new directories, listing the contents of a directory, and determining several common attributes of files and directories. 
+
+It is an abstract representation of files and directory pathnames.
+A pathname, whether abstract or in string form can be either absolute or relative. The parent of an abstract pathname may be obtained by invoking the getParent() method of this class.
+First of all, we should create the File class object by passing the filename or directory name to it. A file system may implement restrictions to certain operations on the actual file-system object, such as reading, writing, and executing. These restrictions are collectively known as access permissions.
+Instances of the File class are immutable; that is, once created, the abstract pathname represented by a File object will never change.
+10.What is Difference between Externalizable and Serialization interface?
+Ans:-Externalizable Vs. Serializable Let’s list down the main differences between Externalizable and Serializable interfaces in java. Serializable is a marker interface i.e. does not contain any method. Externalizable interface includes two methods writeExternal () and readExternal () which implementing classes MUST override

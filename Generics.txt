@@ -1,0 +1,30 @@
+1. What are generics in java?
+Ans:-The Java Generics programming is introduced in J2SE 5 to deal with type-safe objects. It makes the code stable by detecting the bugs at compile time.
+Before generics, we can store any type of objects in the collection, i.e., non-generic. Now generics force the java programmer to store a specific type of objects.
+2. What are the benefits of using Generics in java?
+Ans:-Java is a popular programming language known for its flexibility, reliability, and safety features. One of the key features that make Java a versatile language is its support for generics. Generics in Java provide a way to create type-safe classes, methods, and interfaces, which can work with any data type. In this article, we will discuss the benefits of generics in Java.
+Type safety:
+One of the most significant benefits of using generics in Java is that it enhances the type safety of your code. With generics, you can specify the type of data that a class, method, or interface can work with. This ensures that only the specified data types are passed to the code, preventing runtime errors and improving the reliability of your program.
+
+Code reuse:
+Generics in Java allow you to write code that is more reusable. By specifying a type parameter in a generic class, method, or interface, you can create code that can work with multiple data types. This reduces code duplication, improves code maintainability, and makes your code more efficient.
+
+Compile-time checking:
+Another significant advantage of using generics in Java is that it enables compile-time checking of your code. This means that errors can be detected early in the development process, rather than at runtime. This not only improves the reliability of your program but also saves time and effort in debugging.
+ADVERTISEMENT
+3. What is a Generic class in java?
+Ans:-Java Generics was introduced to deal with type-safe objects. It makes the code stable.Java Generics methods and classes, enables programmer with a single method declaration, a set of related methods, a set of related types. Generics also provide compile-time type safety which allows programmers to catch invalid types at compile time. Generic means parameterized types. Using generics, the idea is to allow any data type to be it Integer, String, or any user-defined Datatype and it is possible to create classes that work with different data types.
+4. What is a type parameter In java Generics?
+Ans:-public static <E> void swap(List<E> list, int src, int des);
+public static void swap(List<?> list, int src, int des);
+The first method uses an unbounded type parameter while the second one uses an unbounded wildcard. Whenever we have an unbounded generic type, we should prefer the second declaration.
+
+Wildcards make code simpler and more flexible. We can pass any list and, additionally, we don’t have to worry about type parameters. If a type parameter appears only once in the method declaration, we should consider replacing it with a wildcard. The same rule applies to bounded type parameters as well.
+
+Without upper or lower bounds, the wildcard represents “any type”, or a type of unknown. Its purpose is to allow a variety of actual argument types to be used at different method invocations. Moreover, wildcards are designed to support flexible subtyping.
+5. What Is A Generic Method In Java?
+Ans:-Generic Method: Generic Java method takes a parameter and returns some value after performing a task. It is exactly like a normal function, however, a generic method has type parameters that are cited by actual type. This allows the generic method to be used in a more general way. The compiler takes care of the type of safety which enables programmers to code easily since they do not have to perform long, individual type castings.
+6. What is the difference between Arraylist And Arraylist<T>?
+Ans:-In Java, array and ArrayList are the well-known data structures. An array is a basic functionality provided by Java, whereas ArrayList is a class of Java Collections framework. It belongs to java.util package.
+Java Array
+An array is a dynamically-created object. It serves as a container that holds the constant number of values of the same type. It has a contiguous memory location. Once an array is created, we cannot change its size
